@@ -65,7 +65,7 @@ export const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Remote',
+      value: 'Noida, India',
       href: '#',
       color: 'text-purple-400',
     },

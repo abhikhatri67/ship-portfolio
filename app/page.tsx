@@ -2,8 +2,9 @@
 
 import { useEffect } from 'react';
 import { Header } from '@/components/Header';
-import { Hero } from '@/components/Hero';
+import { Journey } from '@/components/game/Journey';
 import { About } from '@/components/About';
+import { FeaturedWork } from '@/components/FeaturedWork';
 import { Experience } from '@/components/Experience';
 import { Education } from '@/components/Education';
 import { Projects } from '@/components/Projects';
@@ -34,8 +35,10 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Hero />
+      <Journey />
+      <div aria-hidden className="h-24 bg-gradient-to-b from-[#050816] to-slate-800/50" />
       <About />
+      <FeaturedWork />
       <Experience />
       <Education />
       <Projects />

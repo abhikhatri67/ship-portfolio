@@ -59,10 +59,10 @@ export const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
           >
-            Principal Software Engineer & Team Lead
+            Lead Software Engineer
             <br />
             <span className="text-lg text-gray-400">
-              8.5+ years of building scalable web applications and leading high-performing teams
+              9.5+ years of building scalable web applications, leading teams and driving AI-assisted development
             </span>
           </motion.p>
 

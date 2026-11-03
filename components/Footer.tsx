@@ -45,8 +45,8 @@ export const Footer = () => {
                 </span>
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Principal Software Engineer & Team Lead with 8.5+ years of experience
-                building scalable web applications and leading high-performing teams.
+                Lead Software Engineer with 9.5+ years of experience building
+                scalable web applications and leading high-performing teams.
               </p>
             </div>
 

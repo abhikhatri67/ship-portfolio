@@ -81,14 +81,6 @@ export const Education = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="mt-6 pt-6 border-t border-slate-700">
-                  <p className="text-gray-300 leading-relaxed">
-                    Completed a comprehensive Computer Science program with focus on software engineering,
-                    algorithms, data structures, and web technologies. Built a strong foundation in programming
-                    and problem-solving that has been instrumental in my professional career.
-                  </p>
-                </div>
               </CardContent>
             </Card>
           </motion.div>

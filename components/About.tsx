@@ -38,21 +38,31 @@ export const About = () => {
   ];
 
   const skills = [
-    'ReactJS',
-    'Redux',
+    'React',
+    'TypeScript',
     'JavaScript (ES6+)',
+    'Redux',
+    'Angular',
     'HTML5',
     'CSS3',
-    'Angular',
-    'NodeJS',
-    'Ruby on Rails',
+    'Design Systems',
+    'Frontend Performance',
+    'Node.js',
+    'REST APIs',
     'GraphQL',
+    'Ruby on Rails',
     'Redis',
-    'AWS (EC2, S3, CloudFront)',
-    'Serverless',
-    'Team Leadership',
+    'AWS (EC2, S3, CloudFront, Serverless)',
+    'Vitest',
+    'Playwright',
+    'Vite',
+    'Webpack',
+    'Highcharts',
+    'Recharts',
+    'IoT',
+    'LLM APIs',
+    'Claude / Cursor',
     'Mentorship',
-    'Remote Collaboration',
   ];
 
   return (
@@ -70,7 +80,7 @@ export const About = () => {
               About <span className="text-blue-400">Me</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Principal Software Engineer with 8.5+ years of experience building scalable web applications and leading high-performing teams.
+              Lead Software Engineer with 9.5+ years of experience building scalable web applications and leading high-performing teams.
             </p>
           </div>
 
@@ -86,15 +96,15 @@ export const About = () => {
               </h3>
               <div className="text-gray-300 space-y-4 mb-8">
                 <p>
-                  I'm a Principal Software Engineer and Team Lead at GoGroup with over 8.5 years of experience
-                  in building scalable web applications. I specialize in modern JavaScript frameworks, particularly
-                  ReactJS and Ruby on Rails, and have a strong focus on mentorship and team leadership.
+                  I'm a Lead Software Engineer at GoGroup (Noida, India) with over 9.5 years of experience
+                  building scalable web applications. I specialise in React and TypeScript, backed by Ruby on Rails,
+                  GraphQL and AWS, with a strong focus on design systems, mentorship and team leadership.
                 </p>
                 <p>
-                  Throughout my career, I've led the development of multiple high-impact projects, including
-                  port call coordination tools and energy management systems. I'm passionate about optimizing
-                  performance, implementing best practices, and fostering collaborative remote work environments.
-                  I believe in continuous learning and sharing knowledge through technical articles and mentoring.
+                  I architected and led heyport, a customer-facing platform supporting 10,000+ port calls, and built
+                  an LLM-powered email ingestion workflow. I also championed AI-assisted development (Claude Code,
+                  Cursor) across the engineering team. Earlier, I scaled a frontend team from 1 to 6 engineers and
+                  built real-time IoT energy dashboards at Smart Joules.
                 </p>
               </div>
 
@@ -184,12 +194,12 @@ export const About = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-slate-700 p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-blue-400">8.5+</div>
+                  <div className="text-2xl font-bold text-blue-400">9.5+</div>
                   <div className="text-gray-400 text-sm">Years Experience</div>
                 </div>
                 <div className="bg-slate-700 p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-purple-400">Multiple</div>
-                  <div className="text-gray-400 text-sm">Projects Led</div>
+                  <div className="text-2xl font-bold text-purple-400">10,000+</div>
+                  <div className="text-gray-400 text-sm">Port Calls on heyport</div>
                 </div>
               </div>
             </motion.div>

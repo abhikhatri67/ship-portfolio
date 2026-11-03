@@ -8,32 +8,35 @@ import { Badge } from '@/components/ui/badge';
 const experiences = [
   {
     company: 'GoGroup',
-    location: 'Remote',
+    location: 'Noida, India',
     positions: [
       {
-        title: 'Team Lead',
-        period: 'Jul 2023 – Present',
+        title: 'Lead Software Engineer',
+        period: '',
       },
       {
         title: 'Principal Software Engineer',
-        period: 'Jul 2022 – Jun 2023',
+        period: '',
       },
       {
         title: 'Senior Software Engineer',
-        period: 'Jul 2021 – Jun 2022',
+        period: '',
       },
     ],
     overallPeriod: 'Jul 2021 – Present',
-    description: 'Leading development teams and architecting scalable web applications for maritime and energy sectors.',
+    description: 'Leading frontend architecture, AI-assisted development and customer-facing platforms for maritime and green-energy products.',
     achievements: [
-      'Integrated GraphQL into existing React application, reducing load times by 75% and improving data flow efficiency',
-      'Developed "heyport" - a comprehensive port call coordination tool for ships, vendors, agents, terminals, and authorities',
-      'Built Green Energy Provider Portal MVP with CRUD operations, user access control, and complex authorization',
-      'Led team of engineers, conducted code reviews, and mentored junior developers',
-      'Collaborated with cross-functional teams to design and implement new features',
-      'Established best practices for remote collaboration and code quality',
+      'Architected and led development of heyport, a customer-facing React platform supporting 10,000+ port calls, reducing manual communication by 90% and associated CO₂ emissions by 14%',
+      'Designed and established reusable frontend patterns and component-driven architectures, partnering with product, design, and backend teams',
+      'Architected an AI-powered email ingestion workflow that extracts structured data from unstructured emails using LLMs, validates fields, and persists normalised records',
+      'Initiated and championed adoption of AI-assisted development (Claude Code, Cursor) across the engineering team',
+      'Integrated React applications with backend APIs and data services, handling complex state, async workflows, data visualisation and operational dashboards',
+      'Architected and optimised AWS infrastructure (EC2, S3, CloudFront, serverless) for scalability, reliability, and performance',
+      'Established unit and integration testing practices with Vitest and React Testing Library, improving regression coverage',
+      'Mentored engineers through architecture discussions, code reviews, and hands-on collaboration',
+      'Led development of a green-energy customer portal from inception to production in one month, reducing delivery timelines by 20%',
     ],
-    technologies: ['ReactJS', 'Ruby on Rails', 'GraphQL', 'AWS (EC2, S3, CloudFront)', 'Redux', 'JavaScript (ES6+)', 'HTML5', 'CSS3'],
+    technologies: ['ReactJS', 'TypeScript', 'Ruby on Rails', 'Vitest', 'React Testing Library', 'Playwright', 'GraphQL', 'Recharts', 'AWS'],
   },
   {
     company: 'Smart Joules Private Limited',
@@ -41,24 +44,24 @@ const experiences = [
     positions: [
       {
         title: 'Front-End Team Lead',
-        period: 'Jul 2019 – Jul 2021',
+        period: '',
       },
       {
         title: 'Software Development Engineer',
-        period: 'Mar 2017 – Jun 2019',
+        period: '',
       },
     ],
     overallPeriod: 'Mar 2017 – Jul 2021',
-    description: 'Led front-end development for energy management systems, growing team from 1 to 6 members.',
+    description: 'Led front-end and UI/UX for energy management products, scaling the team from 1 to 6 engineers.',
     achievements: [
-      'Built JouleTrack (Building Management System) from scratch with real-time monitoring and analytics',
-      'Developed DeJoule Energy Management System with comprehensive dashboards and reporting',
-      'Grew and mentored front-end team from 1 to 6 members',
-      'Implemented data visualization using Highcharts for complex energy consumption patterns',
-      'Architected serverless solutions on AWS for scalable deployment',
-      'Integrated Redis for caching and improved application performance',
+      'Led and scaled the Frontend & UI/UX team from 1 → 6 engineers, establishing reusable patterns, code-review practices and standards that increased delivery capacity 5×',
+      'Built JouleTrack, a Progressive Web App for energy management, from the ground up with Angular and real-time IoT connectivity',
+      'Designed data-intensive monitoring dashboards with Highcharts for real-time energy telemetry',
+      'Engineered real-time communication between IoT controllers, backend services, and frontend applications',
+      'Collaborated on Node.js, GraphQL, Redis, and serverless AWS services, improving reliability, scalability, and API efficiency',
+      'Reduced infrastructure costs by 25% through serverless architecture and accelerated product iteration by 40% through early frontend prototyping',
     ],
-    technologies: ['Angular', 'NodeJS', 'Redis', 'GraphQL', 'Serverless', 'AWS', 'Highcharts', 'TypeScript'],
+    technologies: ['Angular', 'NodeJS', 'Redis', 'GraphQL', 'Serverless', 'AWS', 'Highcharts'],
   },
 ];
 
@@ -78,7 +81,7 @@ export const Experience = () => {
               Work <span className="text-blue-400">Experience</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              8.5+ years of professional experience building scalable applications and leading teams
+              9.5+ years of professional experience building scalable applications and leading teams
             </p>
           </div>
 
@@ -117,7 +120,7 @@ export const Experience = () => {
                           className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm"
                         >
                           <span className="text-blue-300 font-semibold">{position.title}</span>
-                          <span className="text-gray-500">{position.period}</span>
+                          {position.period && <span className="text-gray-500">{position.period}</span>}
                         </div>
                       ))}
                     </div>
